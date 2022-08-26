@@ -3,7 +3,7 @@ O WeQuiz é um jogo de perguntas e respostas.
  
 ## Instalação
 - Clone o repositório
-- Inicie seu app com flutter run
+- Inicie seu app com `flutter run`
 
 ## Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
