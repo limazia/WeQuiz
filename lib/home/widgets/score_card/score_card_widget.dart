@@ -20,11 +20,10 @@ class ScoreCardWidget extends StatelessWidget {
               color: AppColors.white, borderRadius: BorderRadius.circular(15)),
           child: Padding(
             padding: responsive.value({
-              Breakpoints.xs: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
-              Breakpoints.sm: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
-              Breakpoints.md: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
-              Breakpoints.lg: const EdgeInsets.symmetric(horizontal: 24),
-              Breakpoints.xl: const EdgeInsets.symmetric(horizontal: 24),
+              Breakpoints.xs:
+                  const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+              Breakpoints.sm:
+                  const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
             }),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
