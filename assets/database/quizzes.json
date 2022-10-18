@@ -1,57 +1,62 @@
 [
   {
-    "title": "Quiz de teste",
+    "title": "Conhecimentos Gerais",
     "questionAnswered": 0,
     "questions": [
       {
-        "title": "Meu nome é Acacio de ?",
+        "title": "De quem é a famosa frase “Penso, logo existo”?",
         "awnsers": [
-          { "title": "Moraes" },
-          { "title": "Lima", "isRight": true },
-          { "title": "Oliveira" },
-          { "title": "Andrade" }
+          { "title": "Platão" },
+          { "title": "Galileu Galilei" },
+          { "title": "Descartes", "isRight": true },
+          { "title": "Sócrates" },
+          { "title": "Francis Bacon" }
         ]
       },
       {
-        "title": "Luis é bom em?",
+        "title": "De onde é a invenção do chuveiro elétrico?",
         "awnsers": [
-          { "title": "React", "isRight": true },
-          { "title": "PHP" },
-          { "title": "Flutter" },
-          { "title": "Node" }
+          { "title": "França" },
+          { "title": "Inglaterra" },
+          { "title": "Brasil", "isRight": true },
+          { "title": "Austrália" },
+          { "title": "Itália" }
         ]
       },
       {
-        "title": "CSS é chato?",
+        "title": "Quais o menor e o maior país do mundo?",
         "awnsers": [
-          { "title": "Sim" },
-          { "title": "Claro" },
-          { "title": "Bem mala", "isRight": true },
-          { "title": "Não" }
+          { "title": "Vaticano e Rússia", "isRight": true },
+          { "title": "Nauru e China" },
+          { "title": "Mônaco e Canadá" },
+          { "title": "Malta e Estados Unidos" },
+          { "title": "São Marino e Índia" }
         ]
       }
     ]
   },
   {
-    "title": "Projeto Flutter",
+    "title": "História",
     "questionAnswered": 0,
     "questions": [
       {
-        "title": "Nosso grupo é?",
+        "title": "Qual a data da Proclamação da República do Brasil?",
         "awnsers": [
-          { "title": "Não sei" },
-          { "title": "Eu realmente não sei" },
-          { "title": "Não manjo mesmo", "isRight": true },
-          { "title": "Grupo Z" }
+          { "title": "15 de novembro de 1889", "isRight": true },
+          { "title": "15 de novembro de 1899" },
+          { "title": "15 de novembro de 1822" },
+          { "title": "15 de novembro de 1832" },
+          { "title": "15 de novembro de 1842" }
         ]
       },
       {
-        "title": "Vini Vini é Gay?",
+        "title": "Nome de nossa terra atribuído por algumas tribos indígenas, no período anterior à chegada dos portugueses ao Brasil",
         "awnsers": [
-          { "title": "Sem Duvidas :D", "isRight": true },
-          { "title": "Sim" },
-          { "title": "Claro" },
-          { "title": "Demais" }
+          { "title": "Terra do Pau Brasil" },
+          { "title": "Terra dos Papagaios" },
+          { "title": "Terra dos Papagaios", "isRight": true },
+          { "title": "Terra de Santa Cruz" },
+          { "title": "Terra de Vera Cruz" }
         ]
       }
     ]
