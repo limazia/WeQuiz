@@ -9,8 +9,7 @@
           { "title": "Platão" },
           { "title": "Galileu Galilei" },
           { "title": "Descartes", "isRight": true },
-          { "title": "Sócrates" },
-          { "title": "Francis Bacon" }
+          { "title": "Sócrates" }
         ]
       },
       {
@@ -19,8 +18,7 @@
           { "title": "França" },
           { "title": "Inglaterra" },
           { "title": "Brasil", "isRight": true },
-          { "title": "Austrália" },
-          { "title": "Itália" }
+          { "title": "Austrália" }
         ]
       },
       {
@@ -29,8 +27,7 @@
           { "title": "Vaticano e Rússia", "isRight": true },
           { "title": "Nauru e China" },
           { "title": "Mônaco e Canadá" },
-          { "title": "Malta e Estados Unidos" },
-          { "title": "São Marino e Índia" }
+          { "title": "Malta e Estados Unidos" }
         ]
       }
     ]
@@ -45,8 +42,7 @@
           { "title": "15 de novembro de 1889", "isRight": true },
           { "title": "15 de novembro de 1899" },
           { "title": "15 de novembro de 1822" },
-          { "title": "15 de novembro de 1832" },
-          { "title": "15 de novembro de 1842" }
+          { "title": "15 de novembro de 1832" }
         ]
       },
       {
@@ -55,8 +51,76 @@
           { "title": "Terra do Pau Brasil" },
           { "title": "Terra dos Papagaios" },
           { "title": "Terra dos Papagaios", "isRight": true },
-          { "title": "Terra de Santa Cruz" },
-          { "title": "Terra de Vera Cruz" }
+          { "title": "Terra de Santa Cruz" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lógica de Programação",
+    "questionAnswered": 0,
+    "questions": [
+      {
+        "title": "O que significa o comando printf na linguagem C?",
+        "awnsers": [
+          { "title": "Pare" },
+          { "title": "Escreva", "isRight": true },
+          { "title": "Leia" },
+          { "title": "Calcule" }
+        ]
+      },
+      {
+        "title": "O que significa o comando scanf na linguagem C?",
+        "awnsers": [
+          { "title": "Pare" },
+          { "title": "Escreva" },
+          { "title": "Leia", "isRight": true },
+          { "title": "Calcule" }
+        ]
+      },
+      {
+        "title": "Qual a função do comando system('pause') na linguagem C?",
+        "awnsers": [
+          { "title": "Congele a tela de exibição", "isRight": true },
+          { "title": "Finalize o programa" },
+          { "title": "Saia do programa" },
+          { "title": "Altere a localidade do programa" }
+        ]
+      },
+      {
+        "title": "O que significa #include<stdio.h> ?",
+        "awnsers": [
+          { "title": "Nada" },
+          { "title": "Declaração de Variáveis" },
+          { "title": "Inclusão de biblioteca", "isRight": true },
+          { "title": "Pedir prioridade na execução" }
+        ]
+      },
+      {
+        "title": "Para uma nota de um aluno qual tipo de dados devo utilizar?",
+        "awnsers": [
+          { "title": "char" },
+          { "title": "float", "isRight": true },
+          { "title": "int" },
+          { "title": "boolean" }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa que não é um exemplo de algoritmo",
+        "awnsers": [
+          { "title": "Fluxograma" },
+          { "title": "Programa em Linguagem C" },
+          { "title": "Português Estruturado" },
+          { "title": "Variáveis do tipo inteiro", "isRight": true }
+        ]
+      },
+      {
+        "title": "O que é fluxograma?",
+        "awnsers": [
+          { "title": "Um algoritmo em Linguagem C" },
+          { "title": "Um algoritmo representado por símbolos", "isRight": true },
+          { "title": "Um algoritmo em português estruturado" },
+          { "title": "Uma sequência infinit" }
         ]
       }
     ]

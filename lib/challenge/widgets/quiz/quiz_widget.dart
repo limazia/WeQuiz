@@ -1,8 +1,14 @@
+import 'package:skynexui_responsive_stylesheet/skynexui_responsive_stylesheet.dart';
+
 import 'package:WeQuiz/challenge/widgets/awnser/awnser_widget.dart';
 import 'package:WeQuiz/core/core.dart';
 import 'package:WeQuiz/shared/models/awnser_model.dart';
 import 'package:WeQuiz/shared/models/question_model.dart';
 import 'package:flutter/material.dart';
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:WeQuiz/core/app_colors.dart';
 
 class QuizWidget extends StatefulWidget {
   final QuestionModel question;
@@ -21,6 +27,8 @@ class _QuizWidgetState extends State<QuizWidget> {
 
   @override
   Widget build(BuildContext context) {
+    var responsive = Responsive(context);
+
     return Container(
       child: Column(
         children: [
@@ -29,7 +37,18 @@ class _QuizWidgetState extends State<QuizWidget> {
           ),
           Text(
             widget.question.title,
-            style: AppTextStyles.heading,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: AppColors.black,
+              fontSize: responsive.value({
+                Breakpoints.xs: 16,
+                Breakpoints.sm: 16,
+                Breakpoints.md: 17,
+                Breakpoints.lg: 17,
+                Breakpoints.xl: 17,
+              }),
+              fontWeight: FontWeight.w600,
+            ),
           ),
           SizedBox(
             height: 24,

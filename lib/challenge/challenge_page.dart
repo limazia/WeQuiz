@@ -89,11 +89,16 @@ class _ChallengePageState extends State<ChallengePage> {
         bottom: true,
         child: Padding(
             padding: responsive.value({
-              Breakpoints.xs: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              Breakpoints.sm: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              Breakpoints.md: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              Breakpoints.lg: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              Breakpoints.xl: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              Breakpoints.xs:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              Breakpoints.sm:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              Breakpoints.md:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              Breakpoints.lg:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              Breakpoints.xl:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             }),
             child: ValueListenableBuilder<int>(
                 valueListenable: controller.currentPageNotifier,
