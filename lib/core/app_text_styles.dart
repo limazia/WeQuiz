@@ -40,6 +40,12 @@ class AppTextStyles {
     fontWeight: FontWeight.normal,
   );
 
+    static final TextStyle challengeText = GoogleFonts.notoSans(
+    color: AppColors.grey,
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
+
   static final TextStyle bodyBold = GoogleFonts.notoSans(
     color: AppColors.grey,
     fontSize: 13,

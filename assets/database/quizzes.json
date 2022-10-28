@@ -46,12 +46,12 @@
         ]
       },
       {
-        "title": "Nome de nossa terra atribuído por algumas tribos indígenas, no período anterior à chegada dos portugueses ao Brasil",
+        "title": "Quem assinou a Lei Áurea do Brasil?",
         "awnsers": [
-          { "title": "Terra do Pau Brasil" },
-          { "title": "Terra dos Papagaios" },
-          { "title": "Terra dos Papagaios", "isRight": true },
-          { "title": "Terra de Santa Cruz" }
+          { "title": "Princesa Mariana Vitória" },
+          { "title": "Princesa Maria Francisca" },
+          { "title": "Princesa Isabel Cristina", "isRight": true },
+          { "title": "Princesa Carlota Joaquina" }
         ]
       }
     ]

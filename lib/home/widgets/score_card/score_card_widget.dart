@@ -20,10 +20,16 @@ class ScoreCardWidget extends StatelessWidget {
               color: AppColors.white, borderRadius: BorderRadius.circular(15)),
           child: Padding(
             padding: responsive.value({
-              Breakpoints.xs:
-                  const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+               Breakpoints.xs:
+                  const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
               Breakpoints.sm:
-                  const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+                  const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
+              Breakpoints.md:
+                  const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
+              Breakpoints.lg:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+              Breakpoints.xl:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
             }),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,8 +52,8 @@ class ScoreCardWidget extends StatelessWidget {
                           style: AppTextStyles.heading,
                         ),
                         Text(
-                          "Complete os desafios e avance em conhecimento",
-                          style: AppTextStyles.body,
+                          "Complete os desafios para aprimorar seus conhecimentos",
+                          style: AppTextStyles.challengeText,
                         ),
                       ],
                     ),

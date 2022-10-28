@@ -20,8 +20,11 @@ class ChallengePage extends StatefulWidget {
 }
 
 class _ChallengePageState extends State<ChallengePage> {
+  bool _isDisable = false;
+
   final controller = ChallengeController();
   final pageController = PageController();
+
   @override
   void initState() {
     pageController.addListener(() {
@@ -42,6 +45,7 @@ class _ChallengePageState extends State<ChallengePage> {
     if (value) {
       controller.qtdAnwserRight++;
     }
+
     nextPage();
   }
 
@@ -78,10 +82,7 @@ class _ChallengePageState extends State<ChallengePage> {
         controller: pageController,
         children: widget.questions
             .map(
-              (e) => QuizWidget(
-                question: e,
-                onSelected: onSelected,
-              ),
+              (e) => QuizWidget(question: e, onSelected: onSelected),
             )
             .toList(),
       ),
@@ -109,7 +110,7 @@ class _ChallengePageState extends State<ChallengePage> {
                           Expanded(
                               child: NextButtonWidget.white(
                             label: "Pular",
-                            onTap: nextPage,
+                            onTap: _isDisable ? () => null : nextPage,
                           )),
                         if (value == widget.questions.length)
                           Expanded(
