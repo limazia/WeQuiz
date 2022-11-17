@@ -1,4 +1,5 @@
 import 'package:skynexui_responsive_stylesheet/skynexui_responsive_stylesheet.dart';
+import 'dart:async';
 
 import 'package:WeQuiz/challenge/widgets/awnser/awnser_widget.dart';
 import 'package:WeQuiz/core/core.dart';
@@ -6,14 +7,17 @@ import 'package:WeQuiz/shared/models/awnser_model.dart';
 import 'package:WeQuiz/shared/models/question_model.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:WeQuiz/core/app_colors.dart';
 
 class QuizWidget extends StatefulWidget {
   final QuestionModel question;
   final ValueChanged<bool> onSelected;
-  const QuizWidget({Key? key, required this.question, required this.onSelected})
+  final ValueChanged<bool> setButton;
+  const QuizWidget(
+      {Key? key,
+      required this.question,
+      required this.onSelected,
+      required this.setButton})
       : super(key: key);
 
   @override
@@ -61,7 +65,9 @@ class _QuizWidgetState extends State<QuizWidget> {
               onTap: (value) {
                 indexSelected = i;
 
-                setState(() {});
+                setState(() {
+                  widget.setButton(true);
+                });
                 Future.delayed(Duration(seconds: 1))
                     .then((_) => widget.onSelected(value));
               },

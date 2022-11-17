@@ -2,6 +2,7 @@ import 'package:WeQuiz/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:WeQuiz/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:flutter/services.dart';
 
 class ResultPage extends StatelessWidget {
   final String title;
@@ -62,8 +63,13 @@ class ResultPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 68),
                       child: NextButtonWidget.white(
                           label: "Voltar ao início",
-                          onTap: () {
+                          onTap: () async {
                             Navigator.pop(context);
+
+                            var response = await rootBundle
+                                .loadString("assets/database/quizzes.json");
+
+                            print(context);
                           }),
                     )),
                   ],

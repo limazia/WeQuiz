@@ -1,4 +1,5 @@
 import 'package:skynexui_responsive_stylesheet/skynexui_responsive_stylesheet.dart';
+import 'dart:async';
 
 import 'package:WeQuiz/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:WeQuiz/challenge/widgets/question_indicator/question_indicator_widget.dart';
@@ -20,7 +21,7 @@ class ChallengePage extends StatefulWidget {
 }
 
 class _ChallengePageState extends State<ChallengePage> {
-  bool _isDisable = false;
+  var isDisable = false;
 
   final controller = ChallengeController();
   final pageController = PageController();
@@ -47,6 +48,14 @@ class _ChallengePageState extends State<ChallengePage> {
     }
 
     nextPage();
+  }
+
+  void setButton(bool value) {
+    isDisable = value;
+
+    setState(() {
+      Timer(Duration(seconds: 1), () => isDisable = false);
+    });
   }
 
   @override
@@ -82,7 +91,8 @@ class _ChallengePageState extends State<ChallengePage> {
         controller: pageController,
         children: widget.questions
             .map(
-              (e) => QuizWidget(question: e, onSelected: onSelected),
+              (e) => QuizWidget(
+                  question: e, onSelected: onSelected, setButton: setButton),
             )
             .toList(),
       ),
@@ -110,7 +120,7 @@ class _ChallengePageState extends State<ChallengePage> {
                           Expanded(
                               child: NextButtonWidget.white(
                             label: "Pular",
-                            onTap: _isDisable ? () => null : nextPage,
+                            onTap: isDisable ? () => null : nextPage,
                           )),
                         if (value == widget.questions.length)
                           Expanded(
