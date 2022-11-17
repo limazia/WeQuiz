@@ -54,7 +54,7 @@ class _ChallengePageState extends State<ChallengePage> {
     isDisable = value;
 
     setState(() {
-      Timer(Duration(seconds: 1), () => isDisable = false);
+      Timer(Duration(milliseconds: 200), () => isDisable = false);
     });
   }
 
@@ -127,14 +127,17 @@ class _ChallengePageState extends State<ChallengePage> {
                               child: NextButtonWidget.green(
                             label: "Confirmar",
                             onTap: () {
-                              Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => ResultPage(
-                                            result: controller.qtdAnwserRight,
-                                            title: widget.title,
-                                            length: widget.questions.length,
-                                          )));
+                              isDisable
+                                  ? () => null
+                                  : Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => ResultPage(
+                                                result:
+                                                    controller.qtdAnwserRight,
+                                                title: widget.title,
+                                                length: widget.questions.length,
+                                              )));
                             },
                           )),
                       ],

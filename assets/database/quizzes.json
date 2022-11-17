@@ -1,33 +1,42 @@
 [
   {
-    "title": "Conhecimentos Gerais",
+    "title": "Geografia",
     "questionAnswered": 0,
     "questions": [
       {
-        "title": "De quem é a famosa frase “Penso, logo existo”?",
+        "title": "Budapeste é a capital de qual país europeu?",
         "awnsers": [
-          { "title": "Platão" },
-          { "title": "Galileu Galilei" },
-          { "title": "Descartes", "isRight": true },
-          { "title": "Sócrates" }
+          { "title": "Dinamarca" },
+          { "title": "Eslováquia" },
+          { "title": "Hungria", "isRight": true },
+          { "title": "Montenegro" }
         ]
       },
       {
-        "title": "De onde é a invenção do chuveiro elétrico?",
+        "title": "A capital dos Emirados Árabes Unidos é:",
         "awnsers": [
-          { "title": "França" },
-          { "title": "Inglaterra" },
-          { "title": "Brasil", "isRight": true },
-          { "title": "Austrália" }
+          { "title": "Dubai" },
+          { "title": "Doha" },
+          { "title": "Arábia Saudita" },
+          { "title": "Abu Dhabi", "isRight": true }
         ]
       },
       {
-        "title": "Quais o menor e o maior país do mundo?",
+        "title": "Qual é o maior país do mundo em área (km²)?",
         "awnsers": [
-          { "title": "Vaticano e Rússia", "isRight": true },
-          { "title": "Nauru e China" },
-          { "title": "Mônaco e Canadá" },
-          { "title": "Malta e Estados Unidos" }
+          { "title": "Rússia", "isRight": true },
+          { "title": "China" },
+          { "title": "Índia" },
+          { "title": "Estados Unidos" }
+        ]
+      },
+      {
+        "title": "Qual é a altura da famosa Torre Eiffel, em Paris?",
+        "awnsers": [
+          { "title": "98 metros" },
+          { "title": "324 metros", "isRight": true },
+          { "title": "214 metros" },
+          { "title": "498 metros" }
         ]
       }
     ]
@@ -57,70 +66,34 @@
     ]
   },
   {
-    "title": "Lógica de Programação",
+    "title": "Matemática",
     "questionAnswered": 0,
     "questions": [
       {
-        "title": "O que significa o comando printf na linguagem C?",
+        "title": "A operação inversa da potenciação é a:",
         "awnsers": [
-          { "title": "Pare" },
-          { "title": "Escreva", "isRight": true },
-          { "title": "Leia" },
-          { "title": "Calcule" }
+          { "title": "adição" },
+          { "title": "radiciação", "isRight": true },
+          { "title": "divisão" },
+          { "title": "subtração" }
         ]
       },
       {
-        "title": "O que significa o comando scanf na linguagem C?",
+        "title": "Figuras congruentes são aquelas que...",
         "awnsers": [
-          { "title": "Pare" },
-          { "title": "Escreva" },
-          { "title": "Leia", "isRight": true },
-          { "title": "Calcule" }
+          { "title": "possuem a mesma forma e a mesma medida", "isRight": true },
+          { "title": "possuem formato cilíndrico" },
+          { "title": "possuem todas as medidas diferentes" },
+          { "title": "possuem ângulos retos" }
         ]
       },
       {
-        "title": "Qual a função do comando system('pause') na linguagem C?",
+        "title": "Fazer uma estimativa significa...",
         "awnsers": [
-          { "title": "Congele a tela de exibição", "isRight": true },
-          { "title": "Finalize o programa" },
-          { "title": "Saia do programa" },
-          { "title": "Altere a localidade do programa" }
-        ]
-      },
-      {
-        "title": "O que significa #include<stdio.h> ?",
-        "awnsers": [
-          { "title": "Nada" },
-          { "title": "Declaração de Variáveis" },
-          { "title": "Inclusão de biblioteca", "isRight": true },
-          { "title": "Pedir prioridade na execução" }
-        ]
-      },
-      {
-        "title": "Para uma nota de um aluno qual tipo de dados devo utilizar?",
-        "awnsers": [
-          { "title": "char" },
-          { "title": "float", "isRight": true },
-          { "title": "int" },
-          { "title": "boolean" }
-        ]
-      },
-      {
-        "title": "Escolha a alternativa que não é um exemplo de algoritmo",
-        "awnsers": [
-          { "title": "Fluxograma" },
-          { "title": "Programa em Linguagem C" },
-          { "title": "Português Estruturado" },
-          { "title": "Variáveis do tipo inteiro", "isRight": true }
-        ]
-      },
-      {
-        "title": "O que é fluxograma?",
-        "awnsers": [
-          { "title": "Um algoritmo em Linguagem C" },
-          { "title": "Um algoritmo representado por símbolos", "isRight": true },
-          { "title": "Um algoritmo em português estruturado" },
-          { "title": "Uma sequência infinit" }
+          { "title": "somar duas matrizes" },
+          { "title": "fazer um cálculo aproximado de algo", "isRight": true },
+          { "title": "traçar uma figura usando uma régua" },
+          { "title": "calcular a altura de um retângulo" }
         ]
       }
     ]
