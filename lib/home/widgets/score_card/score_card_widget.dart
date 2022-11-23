@@ -1,7 +1,6 @@
 import 'package:skynexui_responsive_stylesheet/skynexui_responsive_stylesheet.dart';
 
 import 'package:WeQuiz/core/core.dart';
-import 'package:WeQuiz/home/widgets/chart/chart_widget.dart';
 import 'package:flutter/material.dart';
 
 class ScoreCardWidget extends StatelessWidget {
@@ -36,9 +35,7 @@ class ScoreCardWidget extends StatelessWidget {
               children: [
                 Expanded(
                     flex: 1,
-                    child: ChartWidget(
-                      percent: percent,
-                    )),
+                    child: Image.asset(AppImages.icon)),
                 Expanded(
                   flex: 3,
                   child: Padding(
