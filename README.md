@@ -1,5 +1,7 @@
 # WeQuiz
 O WeQuiz é um jogo de perguntas e respostas.
+
+![Demonstração](https://i.imgur.com/EAKWYuM.png)
  
 ## Instalação
 - Clone o repositório
